@@ -33,7 +33,7 @@ def update_dns_record(record_id, new_ip):
         "type": "A",
         "name": os.getenv("RECORD_NAME"),
         "content": new_ip,
-        "ttl": 1,
+        "ttl": 1, # Auto TTL
         "proxied": False
     }
 
