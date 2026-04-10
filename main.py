@@ -20,7 +20,7 @@ def get_dns_record():
 
     if not data["result"]:
         print(f"ERROR: No A record found for {os.getenv('RECORD_NAME')}")
-        sys.exit()
+        sys.exit(1)
 
     record = data["result"][0]
 
