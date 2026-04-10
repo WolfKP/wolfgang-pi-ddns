@@ -57,6 +57,6 @@ def main():
         print(f"SUCCESS: {os.getenv('RECORD_NAME')} updated to {current_ip}")
     else:
         print("ERROR: Update failed")
-        sys.exit()
+        sys.exit(1)
 
 main()
