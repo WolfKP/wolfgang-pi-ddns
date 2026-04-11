@@ -40,7 +40,7 @@ crontab -e
 ```
 and add
 ```
-*/x * * * * /home/wolfgangkp/wolfgang-pi-ddns/.venv/bin/python3 /home/wolfgangkp/wolfgang-pi-ddns/main.py >> /home/wolfgangkp/wolfgang-pi-ddns/log 2>&1
+*/x * * * * /path/to/wolfgang-pi-ddns/.venv/bin/python3 /path/to/wolfgang-pi-ddns/main.py >> /path/to/wolfgang-pi-ddns/log 2>&1
 ```
 to the crontab file.
 
