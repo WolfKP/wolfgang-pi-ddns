@@ -21,7 +21,7 @@ Clone the repo and create a virtual environment with:
 ```bash
 git clone git@github.com:wolfgangkp/wolfgang-pi-ddns.git
 cd wolfgang-pi-ddns
-python3 -m venv .venv
+python -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
@@ -40,7 +40,7 @@ crontab -e
 ```
 and add
 ```
-*/x * * * * /path/to/wolfgang-pi-ddns/.venv/bin/python3 /path/to/wolfgang-pi-ddns/main.py >> /path/to/wolfgang-pi-ddns/log 2>&1
+*/x * * * * /path/to/wolfgang-pi-ddns/.venv/bin/python /path/to/wolfgang-pi-ddns/main.py >> /path/to/wolfgang-pi-ddns/log 2>&1
 ```
 to the crontab file.
 
